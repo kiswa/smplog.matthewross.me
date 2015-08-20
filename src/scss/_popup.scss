@@ -1,0 +1,49 @@
+.popup-image {
+    clear: both;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 1.3em;
+    margin-top: -2.5em;
+    transition: all .5s ease-in-out;
+
+    @include media($small) {
+        float: left;
+        margin-top: 0;
+    }
+
+    img {
+        max-width: 300px;
+
+        @include media($small) {
+            max-width: 100%;
+        }
+    }
+
+    &::after {
+        background-color: #fff;
+        content: 'Click to expand';
+        font-size: .7em;
+        position: absolute;
+
+        @include media($small) {
+            content: '';
+        }
+    }
+
+    &.popup-open {
+        left: 50%;
+        position: fixed;
+        top: 7rem;
+        transform: translateX(-50%);
+        z-index: 100;
+
+        img {
+            box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .26);
+            max-width: 100%;
+        }
+
+        &::after {
+            content: 'Click to collapse';
+        }
+    }
+}

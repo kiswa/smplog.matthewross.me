@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+$primary: #009688;
+$accent: #333;
+
+$font: #333;
+
+.container {
+    @include outer-container;
+}
+
+.doc-block {
+    clear: both;
+}
+
+.center {
+    text-align: center;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 1.3em;
+}
+
+p {
+    width: 75%;
+
+    @include media($small) {
+        width: 100%;
+    }
+}
+
+a {
+    background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==);
+    background-position: left 1.1em;
+    background-repeat: repeat-x;
+    color: $font;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background .3s linear;
+
+    &:hover,
+    &:active {
+        background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+    }
+}
+
+img {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .26);
+    margin: 0 auto;
+
+    @include media($small) {
+        max-width: 100%;
+    }
+}
+
+header {
+    background-color: $primary;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .26);
+    color: #fff;
+    height: 11rem;
+    left: 0;
+    padding-top: 3rem;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 10;
+
+    @include media($small) {
+        font-size: .8em;
+        height: 9rem;
+        padding-top: .9rem;
+    }
+}
+
+section {
+    margin-top: 13rem;
+
+    @include media($small) {
+        margin-top: 8rem;
+        padding: 1em;
+    }
+}
+
+footer {
+    background-color: $accent;
+    color: #fff;
+    height: 3em;
+
+    p {
+        font-size: .8em;
+        padding-top: 1.3em;
+        text-align: center;
+        width: 100%;
+    }
+}

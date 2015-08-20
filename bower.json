@@ -1,0 +1,22 @@
+{
+  "name": "Project Name",
+  "version": "0.1.0",
+  "authors": [
+    "Matthew Ross"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "description": "Documentation site for SMPLog",
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "bourbon": "~4.2.3",
+    "neat": "~1.7.2",
+    "fontawesome": "~4.4.0"
+  }
+}

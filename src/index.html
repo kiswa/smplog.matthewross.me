@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Matthew Ross">
+        <meta name="description"
+            content="A markdown-based blog with a minimalist style.">
+
+        <title>SMPLog - Documentation</title>
+
+        <link rel="stylesheet" href="lib/vendor.css">
+        <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>SMPLog - Documentation</h1>
+    </header>
+    <section class="container">
+        <h2>Quick Start</h2>
+        <p>Just follow the instructions in
+            <a href="https://github.com/kiswa/SMPLog">the README</a> at the
+            project's repo on GitHub!</p>
+        <p>For a more detailed walkthrough, keep reading.</p>
+
+        <div class="doc-block">
+            <h2>After Install</h2>
+            <p>The first time you visit your site after installation, it will look
+                like this &rarr;</p>
+            <div class="popup-image">
+                <img src="images/01_default_home.png" alt="Default Home">
+            </div>
+            <p>This is the default display with no posts, and no changes to the
+                default settings. The blog's name is SMPLog, the header just has a
+                grey background, and there are no posts.</p>
+        </div>
+
+        <div class="doc-block">
+            <h2>Admin Area</h2>
+            <h3>Log In</h3>
+            <p>The first thing you should do after getting SMPLog running is add
+                <kbd>/admin</kbd> to the end of your address bar and hit
+                <kbd>Enter</kbd>.</p>
+            <p>This will take you to the admin login page, which looks like this
+                &rarr;</p>
+            <div class="popup-image">
+                <img src="images/02_default_admin_login.png"
+                    alt="Default Admin Login">
+            </div>
+            <p>SMPLog always has one admin user, with the username and password
+                set to <kbd>admin</kbd>.</p>
+        </div>
+
+        <div class="doc-block">
+            <h3>Dashboard</h3>
+            <p>Use this account for your first login, and you will see a page
+                like the next image. This is the <strong>Dashboard</strong>, the
+                default page when an author logs into SMPLog.</p>
+            <div class="popup-image">
+                <img src="images/03_default_admin_posts.png"
+                    alt="Default Admin Posts">
+            </div>
+            <p>It always starts at the <strong>Posts</strong> tab, so you can
+                manage your writings directly. Of course, there's nothing here
+                yet.</p>
+        </div>
+
+        <div class="doc-block">
+            <h3>Admin-Only Tab</h3>
+            <p>As the admin user, you have an additional tab that is not
+                available to standard users: the <strong>Authors</strong> tab.
+                This tab allows you to create new accounts and remove existing
+                accounts.</p>
+            <div class="popup-image">
+                <img src="images/04_default_admin_authors.png"
+                    alt="Default Admin Authors">
+            </div>
+            <p>As you can see, there is only the admin user to start. The
+                display name defaults to <strong>Anonymous</strong>, which you
+                can change by going to the <strong>Settings</strong> tab.</p>
+            <p>We'll come back to this page once we've taken care of the site
+                settings.</p>
+        </div>
+
+        <div class="doc-block">
+            <h3>Settings</h3>
+            <p>On the <strong>Settings</strong> tab, you also have an additional
+                section that does not appear for standard users: the <strong>
+                Blog Details</strong> form.</p>
+            <div class="popup-image">
+                <img src="images/05_default_admin_settings.png"
+                    alt="Default Admin Settings">
+            </div>
+            <p>This is where you can set the name of your blog to something
+                other than <strong>SMPLog</strong> (if you want to). You can
+                also set an image link to be displayed behind the site header.</p>
+            <p>The description is used in the RSS feed for your blog, so make
+                it something that describes your feed to possible readers.</p>
+            <p>The <strong>Author Details</strong> form is where you can set the
+                name that is displayed when the admin user creates a post. You
+                can also set an image link for the various author displays across
+                the blog.</p>
+            <p>Last, but certainly not least, is the <strong>Change Password
+                </strong> form. Go ahead and change the default password if you
+                haven't done so already.</p>
+        </div>
+
+        <div class="doc-block">
+            <p>Here you can see what it looks like after updating the various
+                settings for the blog and the admin user.</p>
+            <div class="popup-image">
+                <img src="images/06_custom_admin_settings.png"
+                alt="Custom Admin Settings">
+            </div>
+            <p>Notice that the title in the header has changed to match the new
+                settings. All further screenshots will reflect these new site
+                settings.</p>
+        </div>
+
+        <div class="doc-block">
+            <h3>Adding Authors</h3>
+            <p>Now that the site settings are taken care of, let's get back to
+                that admin-only tab for adding additional authors. Of course,
+                this is entirely optional, so skip this step if you are the
+                sole author on your blog.</p>
+            <div class="popup-image">
+                <img src="images/07_custom_admin_authors.png"
+                alt="Custom Admin Settings">
+            </div>
+            <p>All you have to do is enter a username for the new user (it must
+                be unique for each user). Then enter a new password (twice to
+                make sure) and you have a new user.</p>
+            <p>The only restriction on passwords is that they cannot be empty.
+                There are no silly restrictions about letters and numbers and
+                whatnot. If you want a secure blog, use a good password.</p>
+            <p>As you can see, I have added a second author with the username
+                of <strong>test</strong>. All new users start with the same
+                default display name of <strong>Anonymous</strong> and no set
+                author image.</p>
+            <p>To update these settings, log in as the new user and go to the
+                <strong>Settings</strong> tab (as above).</p>
+        </div>
+
+        <div class="doc-block">
+            <h3>New Post</h3>
+            <p>Now that we've gone over all the settings, let's get some content
+                onto the site!</p>
+            <p>This is what the <strong>New Post</strong> tab looks like when
+                you first open it &rarr;</p>
+            <div class="popup-image">
+                <img src="images/08_admin_new_post.png"
+                alt="Admin New Post">
+            </div>
+        </div>
+
+        <div class="doc-block">
+            <p>As you type into the form on the left side, the Preview pane
+                automatically updates to show you how the markdown you write
+                will be seen by visitors to your blog.</p>
+            <div class="popup-image">
+                <img src="images/09_admin_new_post_text.png"
+                alt="Admin New Post Text">
+            </div>
+            <p>When on mobile devices the writing form is the first thing you
+                see, and scrolling down (swiping up?) will bring the Preview
+                pane into view.</p>
+            <p>The <strong>Save</strong> button does exactly what you think it
+                should. Use it often to make sure you don't lose any work.</p>
+            <p>The <strong>Publish</strong> button sets the post to a published
+                state so it can be seen by readers. When used, it clears the
+                form so you can start on a new post.</p>
+        </div>
+
+        <div class="doc-block">
+            <h3>Posts (Again)</h3>
+            <p>Now that we have some content (and updated settings) the Posts
+                tab on the Dashboard looks a bit different.</p>
+            <div class="popup-image">
+                <img src="images/10_custom_admin_posts.png"
+                alt="Custom Admin Posts">
+            </div>
+            <p>Posts are listed (both published and unpublished) with buttons
+                that allow you to change the publication state, edit the post,
+                or delete the post.</p>
+            <p>Editing a post uses basically the same setup as a new post, with
+                the exception that the Publish button does not reset the form.
+                Instead, it changes into an Unpublish button should you change
+                your mind and want to continue editing.</p>
+            <p>Go ahead and log out to see what the site looks like now that the
+                settings have been updated and some content adaded.</p>
+        </div>
+
+        <div class="doc-block">
+            <h3>Customized Blog</h3>
+            <p>Now that there is a post, and the settings have been updated to
+                give the blog a new name and header background, things look a
+                fair bit different than they did at first.</p>
+            <div class="popup-image">
+                <img src="images/11_custom_home.png"
+                alt="Custom Home">
+            </div>
+            <p>As you can see, posts are paginated. The posts are shown five
+                per page, with the most recent first.</p>
+        </div>
+
+        <div class="doc-block">
+            <h3>Post View</h3>
+            <p>Clicking the post title, or the right angle brackets at the end
+                of the text, will open the post for reading.</p>
+            <div class="popup-image">
+                <img src="images/12_post.png"
+                alt="Post">
+            </div>
+            <p>The styling aims to provide a minimalist reading environment to
+                reduce distraction to the reader.</p>
+            <p>After the post, the author's image (if set) and name are
+                displayed, as well as several links for sharing the post on
+                various social media.</p>
+        </div>
+
+        <div class="doc-block">
+            <h3>Posts by Author</h3>
+            <p>Clicking the author's name, or the 'read more' link, will open
+                a page listing out all posts by the author.</p>
+            <div class="popup-image">
+                <img src="images/13_posts_by_author.png"
+                alt="Posts by Author">
+            </div>
+        </div>
+
+        <div class="doc-block">
+            <h3>Enjoy!</h3>
+            <p>That pretty much covers it. If you have any questions, or find
+                an issue, please let me know on the
+                <a href="https://github.com/kiswa/SMPLog">GitHub repo for SMPlog
+            </a>.</p>
+            <p>One last thing: SMPlog was created to work well on any device.
+                Here's how it looks on a smartphone screen:</p>
+            <p class="center">
+                <img class="center" src="images/14_mobile.png" alt="Mobile Post View">
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2015 Matthew Ross</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
